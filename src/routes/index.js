@@ -25,17 +25,12 @@ router.get('/deleteName', (req, res) => {
     })
 })
 
-router.get('/deleteName/:name', (req, res) => {
-    res.redirect('/deleteName')
-})
-
 //POST
 router.post('/addName', (req,res) =>  postService.addName(req, res))
 
 //Delete
 router.delete('/deleteName/:name', (req, res) =>{
-    console.log(req.params)
-    res.send("hola xdd")
+    deleteService.deleteName(req, res)
 })
 
 module.exports = router

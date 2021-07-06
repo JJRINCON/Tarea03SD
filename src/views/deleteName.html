@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <table class="table table-borderer table-hover">
+        <table class="table table-bordered table-hover">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -24,7 +24,7 @@
                             <td><%=data[i].name%></td>
                             <td>
                                 <form action="/deleteName/<%= data[i].name%>" method="DELETE">
-                                    <input type="submit" value="Eliminar">
+                                    <input type="submit" value="Eliminar"  class="btn btn-danger">
                                 </form>
                             </td>
                         </tr>
